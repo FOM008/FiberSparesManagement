@@ -35,11 +35,11 @@ If you run into any issue or have questions, ideas or concerns, kindly reach us 
 frankochari@gmail.com
 
 ## List of contributors
-Bonface Mwangi Wairimu
-Frank Ochari Mokua
-Hillary Vula
-Dorothy Cherotich Gichaba
+* Bonface Mwangi Wairimu
+* Frank Ochari Mokua
+* Hillary Vula
+* Dorothy Cherotich Gichaba
 
 ## Licence Information
-Distributed under the MIT License. See license.txt for more information.
+Distributed under the MIT license. See license.txt for more information.
 
