@@ -9,4 +9,11 @@ html {
   background-size: cover;
   background-position: center center;
 }
-
+head {
+  background-color: #1ff902;
+  color: #0a0a0a;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
