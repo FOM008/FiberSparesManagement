@@ -1,25 +1,25 @@
 const express = require('express');
-const User = require('../models/user');
+const Role = require('../models/role');
 
 const router = express.Router();
 
-// Get all users
+// Get all roles
 router.get('/', async (req, res) => {
   try {
-    const users = await User.findAll();
-    res.status(200).json(users);
+    const roles = await Role.findAll();
+    res.status(200).json(roles);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 });
 
-// Create a new user
+// Create a new role
 router.post('/', async (req, res) => {
-  const { fname, lname, email, password } = req.body;
+  const { roletype, userid} = req.body;
 
   try {
-    const newUser = await User.create({ fname, lname, email, password });
-    res.status(201).json(newUser);
+    const newRole = await Role.create({ roletype, userid });
+    res.status(201).json(newRole);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

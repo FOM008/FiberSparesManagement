@@ -15,45 +15,31 @@ const pool = new Pool({
 pool.query('SELECT NOW()', (err, result) => {
   if (err) {
     console.error('Error connecting to the database:', err);
+    
   } else {
     console.log('Connected to the database:', result.rows[0].now);
   }
   pool.end();
 });
 
-const User = sequelize.define('User', {
+const Financialyear = sequelize.define('Finacialyear', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   },
-  fname: {
+  finacialyear: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  lname: {
+  userid: {
     type: DataTypes.STRING,
     allowNull: false,
-  },
-  email: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true,
-  },
-  password: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
+  }
+  
 });
 
+Financialyear.sync();
 
-// User.sync({ force: false })
-//   .then(() => {
-//     console.log('User table created successfully.');
-//   })
-//   .catch((error) => {
-//     console.error('Error creating User table:', error);
-//   });
-
-module.exports = User;
+module.exports = Financialyear;
 

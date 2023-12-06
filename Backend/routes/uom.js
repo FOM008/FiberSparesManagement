@@ -1,25 +1,25 @@
 const express = require('express');
-const User = require('../models/user');
+const UOM = require('../models/uom');
 
 const router = express.Router();
 
-// Get all users
+// Get all UOMs
 router.get('/', async (req, res) => {
   try {
-    const users = await User.findAll();
-    res.status(200).json(users);
+    const UOMs = await UOM.findAll();
+    res.status(200).json(UOMs);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 });
 
-// Create a new user
+// Create a new UOM
 router.post('/', async (req, res) => {
-  const { fname, lname, email, password } = req.body;
+  const { uom, userid} = req.body;
 
   try {
-    const newUser = await User.create({ fname, lname, email, password });
-    res.status(201).json(newUser);
+    const newUOM = await UOM.create({ uom, userid });
+    res.status(201).json(newUOM);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

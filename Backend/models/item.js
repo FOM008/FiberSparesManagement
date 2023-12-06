@@ -21,39 +21,30 @@ pool.query('SELECT NOW()', (err, result) => {
   pool.end();
 });
 
-const User = sequelize.define('User', {
+const Item = sequelize.define('Item', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   },
-  fname: {
+  itemcode: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  lname: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  email: {
+  description: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
   },
-  password: {
+  userid: {
     type: DataTypes.STRING,
     allowNull: false,
-  },
+  }
 });
 
 
-// User.sync({ force: false })
-//   .then(() => {
-//     console.log('User table created successfully.');
-//   })
-//   .catch((error) => {
-//     console.error('Error creating User table:', error);
-//   });
+Item.sync();
+  
 
-module.exports = User;
+module.exports = Item;
 

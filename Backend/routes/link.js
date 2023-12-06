@@ -1,25 +1,25 @@
 const express = require('express');
-const User = require('../models/user');
+const Link = require('../models/link');
 
 const router = express.Router();
 
-// Get all users
+// Get all links
 router.get('/', async (req, res) => {
   try {
-    const users = await User.findAll();
-    res.status(200).json(users);
+    const links = await Link.findAll();
+    res.status(200).json(links);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 });
 
-// Create a new user
+// Create a new link
 router.post('/', async (req, res) => {
-  const { fname, lname, email, password } = req.body;
+  const { linkname , userid} = req.body;
 
   try {
-    const newUser = await User.create({ fname, lname, email, password });
-    res.status(201).json(newUser);
+    const newLink = await Link.create({ linkname, userid });
+    res.status(201).json(newLink);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
