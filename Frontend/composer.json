@@ -1,0 +1,13 @@
+{
+    "name": "creativetimofficial/material-dashboard",
+    "description": "Dashboard",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Capstone project",
+            "email": "hillaryvula@gmail.com"
+        }
+    ],
+    "require": {}
+}
