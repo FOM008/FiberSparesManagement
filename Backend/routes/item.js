@@ -18,8 +18,8 @@ router.post('/', async (req, res) => {
   const { itemcode, description, userid} = req.body;
 
   try {
-    const newUser = await User.create({ itemcode, description, userid});
-    res.status(201).json(newUser);
+    const newItem = await Item.create({ itemcode, description, userid});
+    res.status(201).json(newItem);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
