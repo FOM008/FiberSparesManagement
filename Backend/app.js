@@ -1,4 +1,6 @@
 const express= require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const app= express();
 const userRoutes = require('./routes/user');
 const linkRoutes = require('./routes/link');
@@ -11,8 +13,9 @@ const stockRoutes=require('./routes/stock');
 const requestRoutes=require('./routes/request');
 const finacialyearRoutes=require('./routes/finacialyear');
 
-
+app.use(bodyParser.json());
 app.use(express.json());
+app.use(cors());
 
 app.set('view engine', 'ejs');
 app.use('/users', userRoutes);
