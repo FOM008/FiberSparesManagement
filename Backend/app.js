@@ -29,8 +29,7 @@ app.use('/prices', priceRouter);
 app.use('/stock', stockRouter);
 app.use('/requests', requestRouter);
 app.use("/financialyears",finacialyearRouter);
-app.use("/contractors", contractorRouter)
-
+app.use("/contractors", contractorRouter);
 
 const PORT=3000;
 
