@@ -2,32 +2,34 @@ const express= require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app= express();
-const userRoutes = require('./routes/user');
-const linkRoutes = require('./routes/link');
-const itemRoutes = require('./routes/item');
-const roleRoutes = require('./routes/role');
-const uomRoutes = require('./routes/uom');
-const itemtypeRoutes =require('./routes/itemtype');
-const priceRoutes = require('./routes/price');
-const stockRoutes=require('./routes/stock');
-const requestRoutes=require('./routes/request');
-const finacialyearRoutes=require('./routes/finacialyear');
+const userRouter = require('./routes/user');
+const linkRouter = require('./routes/link');
+const itemRouter = require('./routes/item');
+const roleRouter = require('./routes/role');
+const uomRouter = require('./routes/uom');
+const itemtypeRouter =require('./routes/itemtype');
+const priceRouter = require('./routes/price');
+const stockRouter=require('./routes/stock');
+const requestRouter=require('./routes/request');
+const finacialyearRouter=require('./routes/finacialyear');
+const contractorRouter=require('./routes/contractor');
 
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 
 app.set('view engine', 'ejs');
-app.use('/users', userRoutes);
-app.use('/links', linkRoutes);
-app.use('/items', itemRoutes);
-app.use('/roles', roleRoutes);
-app.use('/uoms', uomRoutes);
-app.use('/itemtypes',itemtypeRoutes);
-app.use('/prices', priceRoutes);
-app.use('/stock', stockRoutes);
-app.use('/requests', requestRoutes);
-app.use("/financialyears",finacialyearRoutes);
+app.use('/users', userRouter);
+app.use('/links', linkRouter);
+app.use('/items', itemRouter);
+app.use('/roles', roleRouter);
+app.use('/uoms', uomRouter);
+app.use('/itemtypes',itemtypeRouter);
+app.use('/prices', priceRouter);
+app.use('/stock', stockRouter);
+app.use('/requests', requestRouter);
+app.use("/financialyears",finacialyearRouter);
+app.use("/contractors", contractorRouter)
 
 
 const PORT=3000;

@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/logo.png">
   <title>
-    Link
+    Role
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -71,7 +71,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/stock.html">
+          <a class="nav-link text-white bg-gradient-primary active" href="../pages/stock.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">receipt_long</i>
             </div>
@@ -79,7 +79,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/requests.html">
+          <a class="nav-link text-white" href="../pages/requests.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
             </div>
@@ -87,7 +87,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white bg-gradient-primary active" href="../pages/links.html">
+          <a class="nav-link text-white " href="../pages/links.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">link</i>
             </div>
@@ -123,9 +123,9 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
               <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-              <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Link</li>
+              <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Stocks</li>
             </ol>
-            <h6 class="font-weight-bolder mb-0">Link</h6>
+            <h6 class="font-weight-bolder mb-0">Stocks</h6>
           </nav>
           <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
             <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -144,17 +144,18 @@
           </div>
         </div>
       </nav>
-  
-      <a href="addlinks.html"><button id="link" type="button" class="btn btn-primary">Add Link</button></a>
-
       <!-- End Navbar -->
+
+<!-- Links -->
+<a href="addstocks.html"><button id="item" type="button" class="btn btn-primary">Add stock</button></a>
+
       <div class="container-fluid py-4">
         <div class="row">
           <div class="col-12">
             <div class="card my-4">
               <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                 <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                  <h6 class="text-white text-capitalize ps-3">Link</h6>
+                  <h6 class="text-white text-capitalize ps-3">Stocks</h6>
                 </div>
               </div>
               <div class="card-body px-0 pb-2">
@@ -162,10 +163,10 @@
                   <table class="table align-items-center mb-0">
                     <thead>
                       <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Link</th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Link name</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Link description</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Link</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">User</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Role</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
+                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Expiry</th>
                         <th class="text-secondary opacity-7"></th>
                       </tr>
                     </thead>
@@ -174,20 +175,20 @@
                         <td>
                           <div class="d-flex px-2 py-1">
                             <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-sm">Link</A></h6>
-                              <p class="text-xs text-secondary mb-0">Link</p>
+                              <h6 class="mb-0 text-sm">Adrian</A></h6>
+                              
                             </div>
                           </div>
                         </td>
                         <td>
-                          <p class="text-xs font-weight-bold mb-0">Link</code></p>
-                          <p class="text-xs text-secondary mb-0">Link</p>
+                          <p class="text-xs font-weight-bold mb-0">Normal User</code></p>
+                          
                         </td>
                         <td class="align-middle text-center text-sm">
-                          <span class="badge badge-sm bg-gradient-success">Link</span>
+                          <span class="badge badge-sm bg-gradient-success">Active</span>
                         </td>
                         <td class="align-middle text-center">
-                          <span class="text-secondary text-xs font-weight-bold">Link</span>
+                          <span class="text-secondary text-xs font-weight-bold">12 Dec 2024</span>
                         </td>
                       </tr>
                       

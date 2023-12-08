@@ -27,8 +27,12 @@ const Request = sequelize.define('Request', {
     primaryKey: true,
     autoIncrement: true,
   },
-  item: {
+  itemcode: {
     type: DataTypes.STRING,
+    allowNull: false,
+  },
+  quantity: {
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
   incidentid: {
@@ -38,10 +42,10 @@ const Request = sequelize.define('Request', {
   linkname: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
   },
+  
   userid: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
 });
@@ -49,6 +53,13 @@ const Request = sequelize.define('Request', {
 
 Request.sync();
 
+// Request.sync({ force: true })
+//   .then(() => {
+//     console.log('Request table created successfully.');
+//   })
+//   .catch((error) => {
+//     console.error('Error creating Request table:', error);
+//   });
 
 module.exports = Request;
 

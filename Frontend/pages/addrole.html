@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/logo.png">
   <title>
-    Link
+    Item code
   </title>
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
@@ -38,7 +38,7 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href="../pages/dashboard.html">
+          <a class="nav-link text-white " href="../pages/dashboard.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">dashboard</i>
             </div>
@@ -87,7 +87,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white bg-gradient-primary active" href="../pages/links.html">
+          <a class="nav-link text-white " href="../pages/links.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">link</i>
             </div>
@@ -96,7 +96,7 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/roles.html">
+          <a class="nav-link text-white bg-gradient-primary active" href="../pages/roles.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">person</i>
             </div>
@@ -123,9 +123,9 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
               <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-              <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Link</li>
+              <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Roles</li>
             </ol>
-            <h6 class="font-weight-bolder mb-0">Link</h6>
+            <h6 class="font-weight-bolder mb-0">Roles</h6>
           </nav>
           <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
             <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -137,77 +137,63 @@
               <li class="nav-item d-flex align-items-center">
                 <a href="../pages/sign-in.html" class="nav-link text-body font-weight-bold px-0">
                   <i class="fa fa-user me-sm-1"></i>
-                  <span class="d-sm-inline d-none">Sign Out</span>
+                  <span class="d-sm-inline d-none">Sign Out</span>              
+
+                  
                 </a>
               </li>
             </ul>
+            
           </div>
         </div>
-      </nav>
-  
-      <a href="addlinks.html"><button id="link" type="button" class="btn btn-primary">Add Link</button></a>
+        <BR>
 
-      <!-- End Navbar -->
-      <div class="container-fluid py-4">
-        <div class="row">
-          <div class="col-12">
-            <div class="card my-4">
-              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                  <h6 class="text-white text-capitalize ps-3">Link</h6>
-                </div>
-              </div>
-              <div class="card-body px-0 pb-2">
-                <div class="table-responsive p-0">
-                  <table class="table align-items-center mb-0">
-                    <thead>
-                      <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Link</th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Link name</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Link description</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Link</th>
-                        <th class="text-secondary opacity-7"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="d-flex px-2 py-1">
-                            <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-sm">Link</A></h6>
-                              <p class="text-xs text-secondary mb-0">Link</p>
-                            </div>
-                          </div>
-                        </td>
-                        <td>
-                          <p class="text-xs font-weight-bold mb-0">Link</code></p>
-                          <p class="text-xs text-secondary mb-0">Link</p>
-                        </td>
-                        <td class="align-middle text-center text-sm">
-                          <span class="badge badge-sm bg-gradient-success">Link</span>
-                        </td>
-                        <td class="align-middle text-center">
-                          <span class="text-secondary text-xs font-weight-bold">Link</span>
-                        </td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+        
+      </nav>
+      
+     
+        <!-- Your trigger form content goes here -->
+        <div class="col-xl-8 d-flex flex-column ms-auto me-auto ms-lg-auto">
+          <div class="card card-plain">
+            <div class="card-header">
+              <h4 class="font-weight-bolder">Add Role</h4>
+              <p class="mb-0">Fill in the form below</p>
             </div>
-          </div>
-        </div>
-       
-       
-              </div>
+            <div class="card-body">
+              <form role="form" method="post" enctype="multipart/form-data">
+                <!-- <div class="input-group input-group-outline mb-3">
+                  <label class="form-label">Item Type</label>
+                  <select name="item_type_id" id="item_type_id">
+                    <option value="adss">ADSS</option>
+                    <option value="fiber">Fiber</option>
+                    <option value="microfiber">Msicrofiber</option>
+                  </select>
+                </div> -->
+                <div class="input-group input-group-outline mb-3">
+                  <label class="form-label">Role Name</label>
+                  <input type="text" class="form-control" id= "roletype" name="roletype" required>
+                </div>
+                <input type="hidden" name="userid" id="userid" value="1" class="form-control">
+                <div class="text-center">
+                  <input type="button" onclick="submitRole()" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0" value="submit">
+                </div>
+                <span id="suc"></span>
+                <span id="err"></span>
+              </form>
               
             </div>
+            <div class="alert alert-success alert-dismissible text-white" role="alert" id="successdiv" hidden>
+              <span class="text-sm" id="success"></span>
+              <button type="button" class="btn-close text-lg py-3 opacity-10" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
           </div>
-        </footer>
-      </div>
+        </div>
     </main>
    
+
+
       </div>
     </div>
     <!--   Core JS Files   -->
@@ -228,6 +214,10 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
+    <!-- <script src="../js/jquery.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../js/item.js"></script>
+    <script src="../js/submit.js"></script>
   </body>
   
   </html>

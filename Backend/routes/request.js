@@ -15,10 +15,10 @@ router.get('/', async (req, res) => {
 
 // Create a new request
 router.post('/', async (req, res) => {
-  const { item, incidentid, linkname, userid} = req.body;
+  const { itemcode, quantity, incidentid, linkname, userid} = req.body;
 
   try {
-    const newRequest = await Request.create({ item, incidentid, linkname, userid});
+    const newRequest = await Request.create({ itemcode, quantity, incidentid, linkname, userid});
     res.status(201).json(newRequest);
   } catch (error) {
     res.status(500).json({ message: error.message });

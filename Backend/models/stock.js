@@ -32,16 +32,15 @@ const Stock = sequelize.define('Stock', {
     allowNull: false,
   },
   quantity: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
   unitcost: {
-    type: DataTypes.STRING,
+    type: DataTypes.FLOAT,
     allowNull: false,
-    unique: true,
   },
   totalprice: {
-    type: DataTypes.STRING,
+    type: DataTypes.FLOAT,
     allowNull: false,
   },
   description: {
@@ -49,7 +48,7 @@ const Stock = sequelize.define('Stock', {
     allowNull: false,
   },
   userid: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
 });
